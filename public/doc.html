@@ -4,13 +4,121 @@
 <head>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<title>Pincode API | Documentation</title>
+	<title>Pincode API Documentation</title>
+	<style>
+		body {
+			font-family: Arial, sans-serif;
+			line-height: 1.6;
+			margin: 0;
+			padding: 0;
+			background-color: #f9f9f9;
+			color: #333;
+		}
+
+		.container {
+			max-width: 90%;
+			margin: 20px auto;
+			padding: 20px;
+			background: #fff;
+			border-radius: 8px;
+			box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+		}
+
+		h1,
+		h2 {
+			color: #007BFF;
+		}
+
+		code {
+			background: #f4f4f4;
+			padding: 2px 6px;
+			border-radius: 4px;
+			color: #d6336c;
+		}
+
+		.endpoint {
+			margin: 20px 0;
+		}
+
+		.todo-list {
+			list-style: none;
+			padding: 0;
+		}
+
+		.todo-list li {
+			margin: 10px 0;
+		}
+
+		.todo-list li.completed {
+			text-decoration: line-through;
+			color: #6c757d;
+		}
+
+		@media (min-width: 768px) {
+			.container {
+				max-width: 800px;
+			}
+		}
+	</style>
 </head>
 
 <body>
-	<center>
-		<h1>Pincode API Documentation</h1>
-	</center>
+	<div class="container">
+		<h1>Pincode API</h1>
+		<p>A RESTful API for managing pincode-related data.</p>
+
+		<h2>Base URL</h2>
+		<p><code>/dev/api/v1</code></p>
+
+		<h2>Endpoints</h2>
+
+		<div class="endpoint">
+			<h3>1. Fetch All Data</h3>
+			<p><strong>Method:</strong> <code>GET</code></p>
+			<p><strong>Endpoint:</strong> <code>/pincode</code></p>
+			<p>Returns a list of all available pincode data.</p>
+		</div>
+
+		<div class="endpoint">
+			<h3>2. Fetch Data by Pincode (ToDo)</h3>
+			<p><strong>Method:</strong> <code>GET</code></p>
+			<p><strong>Endpoint:</strong> <code>/pincode/:code</code></p>
+			<p>Retrieves data for a specific pincode.</p>
+		</div>
+
+		<div class="endpoint">
+			<h3>3. Load Data (Authorized)</h3>
+			<p><strong>Method:</strong> <code>POST</code></p>
+			<p><strong>Endpoint:</strong> <code>/pincode</code></p>
+			<p>Uploads new pincode data.</p>
+			<p><strong>Note:</strong> This endpoint requires authorization.</p>
+		</div>
+
+		<div class="endpoint">
+			<h3>4. Update Data (ToDo)</h3>
+			<p><strong>Method:</strong> <code>PATCH</code></p>
+			<p><strong>Endpoint:</strong> <code>/pincode/:code</code></p>
+			<p>Updates existing data for the specified pincode.</p>
+		</div>
+
+		<div class="endpoint">
+			<h3>5. Delete Data by Pincode (ToDo)</h3>
+			<p><strong>Method:</strong> <code>DELETE</code></p>
+			<p><strong>Endpoint:</strong> <code>/pincode/:code</code></p>
+			<p>Removes data associated with the specified pincode.</p>
+		</div>
+
+		<h2>To-Do List</h2>
+		<ul class="todo-list">
+			<li class="completed">&#x2713; <code>GET</code> /pincode</li>
+			<li>&#x2717; <code>GET</code> /pincode/:code</li>
+			<li class="completed">&#x2713; <code>POST</code> /pincode</li>
+			<li>&#x2717; <code>PATCH</code> /pincode/:code</li>
+			<li>&#x2717; <code>DELETE</code> /pincode/:code</li>
+		</ul>
+
+		<p>Feel free to contribute or suggest improvements!</p>
+	</div>
 </body>
 
 </html>
