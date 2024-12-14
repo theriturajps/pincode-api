@@ -11,12 +11,16 @@ app.use(morgan('dev'))
 app.use(express.json())
 app.use(express.static(path.join(__dirname, '..', 'public'))) // Static files
 
+app.get('/', (req, res) => {
+  res.sendFile('home.html', { root: path.join(__dirname, '..', 'public') })
+})
+
 app.get('/doc', (req, res) => {
   res.sendFile('doc.html', { root: path.join(__dirname, '..', 'public') })
 })
 
-app.get('/', (req, res) => {
-  res.sendFile('home.html', { root: path.join(__dirname, '..', 'public') })
+app.get('/github', (req, res) => {
+  res.redirect('https://github.com/theriturajps/pincode-api')
 })
 
 app.use('/dev/api/v1', allPincode)
