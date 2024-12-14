@@ -10,7 +10,7 @@ A RESTful API for managing pincode-related data.
 
 ### 1. Fetch All Data
 
-**GET** `/pincode`  
+**`GET`** `/pincode`  
 
 Returns a list of all available pincode data.  
 
@@ -18,7 +18,7 @@ Returns a list of all available pincode data.
 
 ### 2. Fetch Data by Pincode (ToDo)
 
-**GET** `/pincode/:code`  
+**`GET`** `/pincode/:code`  
 
 Retrieves data for a specific pincode.  
 
@@ -26,7 +26,7 @@ Retrieves data for a specific pincode.
 
 ### 3. Load Data (Authorized)
 
-**POST** `/pincode`  
+**`POST`** `/pincode`  
 
 Uploads new pincode data.  
 
@@ -36,7 +36,7 @@ Uploads new pincode data.
 
 ### 4. Update Data (ToDo)
 
-**PATCH** `/pincode/:code`  
+**`PATCH`** `/pincode/:code`  
 
 Updates existing data for the specified pincode.  
 
@@ -44,18 +44,18 @@ Updates existing data for the specified pincode.
 
 ### 5. Delete Data by Pincode (ToDo)
 
-**DELETE** `/pincode/:code`  
+**`DELETE`** `/pincode/:code`  
 
 Removes data associated with the specified pincode.  
 
 ---
 
 ### To-Do List:
-- [x] Implement `GET /pincode`  
-- [ ] Implement `GET /pincode/:code`  
-- [x] Implement `POST /pincode`  
-- [ ] Implement `PATCH /pincode/:code`  
-- [ ] Implement `DELETE /pincode/:code`
+- [x] `GET` `/pincode`  
+- [ ] `GET` `/pincode/:code`  
+- [x] `POST` `/pincode`  
+- [ ] `PATCH` `/pincode/:code`  
+- [ ] `DELETE` `/pincode/:code`
 
 ---
 
